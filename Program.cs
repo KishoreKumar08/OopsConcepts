@@ -21,6 +21,14 @@ namespace OopsConcepts
     {
         return a-b-c-d;
     }
+    public int squareOfvalue(int b)
+    {
+            return a * a;
+    }
+    public int cubeOfvalue(int a)
+    {
+        return a * a * a;
+    }
 }
 class mainClass : Calculator
 {
