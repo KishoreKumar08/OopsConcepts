@@ -4,7 +4,7 @@ namespace OopsConcepts
 {
     class Calculator
 {
-       public int a, b, c, d;
+       public int a, b, c, d,e;
     public int multiplication(int a,int b)
     {
       return a*b;   

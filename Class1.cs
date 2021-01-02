@@ -8,6 +8,7 @@ namespace OopsConcepts
     {
         void run1()
         {
+            int a = 10;
             Console.WriteLine("The Square values is " + this.multiplication(a, b));
             Console.WriteLine("The Cube value is " + this.division(c, d));
             Console.WriteLine("The Square values is " + this.addition(a, b, c));
