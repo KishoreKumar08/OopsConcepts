@@ -3,34 +3,36 @@
 namespace OopsConcepts
 {
     class Calculator
-{
-       public int a, b, c, d;
-    public int multiplication(int a,int b)
     {
-      return a*b;   
-    }
-    public int division(int c,int d)
-    {
-      return c/d;
-    }
-    public int addition(int a,int b,int c)
-    {
-        return a+b+c;
-    }
-    public int subtraction(int a, int b, int c, int d)
-    {
-        return a-b-c-d;
-    }
-    public int squareOfvalue(int b)
-    {
+        public int a, b, c, d;
+        public int multiplication(int a, int b)
+        {
+            return a * b;
+        }
+        public int division(int c, int d)
+        {
+            return c / d;
+        }
+        public int addition(int a, int b, int c)
+        {
+            return a + b + c;
+        }
+        public int subtraction(int a, int b, int c, int d)
+        {
+            return a - b - c - d;
+        }
+        public int squareOfvalue(int b)
+        {
             return a * a;
-    }
-    public int cubeOfvalue(int a)
-    {
-        return a * a * a;
+        }
+        public int cubeOfvalue(int a)
+        {
+            return a * a * a;
+        }
+        
     }
 }
-class mainClass : Calculator
+/*class mainClass : Calculator
 {
     void run()
     {
@@ -48,7 +50,7 @@ class mainClass : Calculator
             Console.WriteLine("The added value of multiplied result and addition result is "
                 + this.multiplication(a, b) + this.addition(a, b, c));
         }
-       /* static void Main()
+       static void Main()
     {
         mainClass m2=new mainClass();            
            *//* m2.a = 100;
@@ -57,6 +59,6 @@ class mainClass : Calculator
             m2.d = 12;
             m2.run();
             m2.anotherRun();
-        }*/
-}
-}
+        }
+}*/
+
