@@ -160,6 +160,22 @@ namespace OopsConcepts
                 Console.WriteLine(i);
             }
         }
+        static void seperateCharsInAString()
+        {
+            int i = 0, l, total = 0;
+            String a = "IsaacSamPaul08!@#$%&*";
+            l = a.Length - 1;
+            while (i < l)
+            {
+                if (a[l] >= 'a' && a[l] <= 'z' || a[l] >= 'A' && a[l] <= 'Z')
+                {
+                    total = total + 1;
+                }
+                l--;
+            }
+            Console.WriteLine("The total length of chars are " + total);
+
+        }
         public static void exceptionHandling()
         {
             try
@@ -180,6 +196,7 @@ namespace OopsConcepts
 
         }
     }
+    // Abstraction
         abstract class Amazon
         {
             public static void addToCart()
@@ -211,6 +228,7 @@ namespace OopsConcepts
                 i.login();
             }*/
         }
+    // Interface
         public interface test
         {
             void login();
@@ -277,31 +295,7 @@ namespace OopsConcepts
             String landing = driver.Title.ToString();
             Console.WriteLine($"The current url's title is {landing}");  
             driver.Close();
-        }  
-        static void seperateCharsInAString()
-        {
-                int i = 0, l, total = 0;
-                String a = "IsaacSamPaul08!@#$%&*";
-                l = a.Length - 1;
-                while (i < l)
-                {
-                    if (a[l] >= 'a' && a[l] <= 'z' || a[l] >= 'A' && a[l] <= 'Z')
-                    {
-                        total=total+1;
-                    }
-                    l--;
-                }
-                Console.WriteLine("The total length of chars are " + total);            
-        }
-        /*static void Main()
-        {
-            //seperateCharsInAString();
-            int[] a = {111111,222222};
-            foreach(int i in a)
-            {
-                Console.WriteLine($"The integer is {i}");
-            }            
-        }*/        
+        }          
     }
     class eeolution
     {
@@ -327,42 +321,5 @@ namespace OopsConcepts
             cn.addition(1,2,3);
         }*/
     }
-
-    class Solution
-    {
-        public string solution(string S, int Y)
-        {
-            String ResDay = "";
-            String[] day = { "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" };
-            int[] k = Enumerable.Range(1, 500).ToArray();
-            for (int i = 0; i <= day.Length; i++)
-            {
-                ResDay = day[i + Y];
-            }
-            return ResDay;
-
-        }
-    }
-    public class SampleClass
-        {
-            public void helloWorld()
-            {
-                Console.WriteLine("Heelo there");
-            }
-        }
-        public class AnotherClass : SampleClass
-        {
-            /*public static void Main()
-            {
-                AnotherClass a = new AnotherClass();
-                a.helloWorld();
-                String b = "Hello there";
-                String[] c = b.Split(" ");
-                foreach (String x in c)
-                {
-                    Console.WriteLine(x);
-                }
-            }*/
-        }
 }
 
