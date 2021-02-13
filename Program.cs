@@ -45,58 +45,12 @@ namespace OopsConcepts
             al.Add(123);
             al.Add(54321.09);
             al.Add('P');
-
+            //al.Reverse();
+            //al.Remove(123);
+            //al.RemoveAt(0);
             foreach (var x in al)
             {
                 Console.WriteLine(x);
-            }
-        }
-        public void hash()
-        {
-            Hashtable ht = new Hashtable();
-            ht.Add('a', 1);
-            ht.Add('c', "automation");
-            ht.Add('b', 12344.56);
-            ht.Add('e', "cucumber");
-            ht.Add(12.34, "selenium");
-            Console.WriteLine("The no of total elements in my HashTable is " + ht.Count);
-            Console.WriteLine(ht);
-            foreach (DictionaryEntry i in ht)
-            {
-                Console.WriteLine("The Current Key in HashTable is " + i.Key + " The Current value in HashTable is " + i.Value);
-                /* Console.WriteLine(i.Value.GetType().Name);
-                 Console.WriteLine(i.Key.GetType());*/
-            }
-        }
-        public void sortedList()
-        {
-            SortedList sl = new SortedList();
-            sl.Add("hey", "C#");
-            sl.Add("", "automation");
-            sl.Add("hi", "");
-            sl.Add("how", "cucumber");
-            sl.Add("are you ", "selenium");
-            Console.WriteLine("The no of total elements in my Sorted List is " + sl.Count); ;
-            Console.WriteLine(sl);
-            foreach (DictionaryEntry i in sl)
-            {
-                Console.WriteLine("The Current Key in Sorted Lsit is " + i.Key + " The Current value in Sorted List is " + i.Value);
-            }
-
-        }
-        public void stack()
-        {
-            Stack s = new Stack();
-            s.Push("I am");
-            s.Push(123);
-            s.Push(4.23);
-            s.Push('c');
-            s.Pop();
-            s.Push(12345678901234);
-
-            foreach (var i in s)
-            {
-                Console.WriteLine(i);
             }
         }
         public static void genericList()
@@ -115,6 +69,56 @@ namespace OopsConcepts
                 Console.WriteLine(i);
             }
         }
+        public void sortedList()
+        {
+            SortedList sl = new SortedList();
+            sl.Add("hey", "C#");
+            sl.Add("", "automation");
+            sl.Add("hi", "");
+            sl.Add("how", "cucumber");
+            sl.Add("are you ", "selenium");
+            //sl.Remove("hi");
+            //sl.RemoveAt(2);
+            Console.WriteLine("The no of total elements in my Sorted List is " + sl.Count); ;
+            Console.WriteLine(sl);
+            foreach (DictionaryEntry i in sl)
+            {
+                Console.WriteLine("The Current Key in Sorted Lsit is " + i.Key + " The Current value in Sorted List is " + i.Value);
+            }
+        }
+        public static void genericSortedList()
+        {
+            SortedList<char, string> gsl = new SortedList<char, string>();
+            gsl.Add('y', "C#");
+            gsl.Add('k', "automation");
+            gsl.Add('c', "");
+            gsl.Add('z', "");
+            gsl.Add('b', "selenium");
+            Console.WriteLine("The no of total elements in my Sorted List is " + gsl.Count);
+            Console.WriteLine(gsl);
+            foreach (KeyValuePair<char, string> i in gsl)
+            {
+                Console.WriteLine("The Current Key in Sorted Lsit is " + i.Key + " The Current value in Sorted List is " + i.Value);
+            }
+        }
+        public void hash()
+        {
+            Hashtable ht = new Hashtable();
+            ht.Add('a', 1);
+            ht.Add('c', "automation");
+            ht.Add('b', 12344.56);
+            ht.Add('e', "cucumber");
+            ht.Add(12.34, "selenium");
+            // ht.Remove('c');
+            Console.WriteLine("The no of total elements in my HashTable is " + ht.Count);
+            Console.WriteLine(ht);
+            foreach (DictionaryEntry i in ht)
+            {
+                Console.WriteLine("The Current Key in HashTable is " + i.Key + " The Current value in HashTable is " + i.Value);
+                /* Console.WriteLine(i.Value.GetType().Name);
+                 Console.WriteLine(i.Key.GetType());*/
+            }
+        }
         public static void genericHashTable()
         {
             Dictionary<int, string> ght = new Dictionary<int, string>();
@@ -131,19 +135,19 @@ namespace OopsConcepts
                  Console.WriteLine(i.Key.GetType());*/
             }
         }
-        public static void genericSortedList()
+        public void stack()
         {
-            SortedList<char, string> gsl = new SortedList<char, string>();
-            gsl.Add('y', "C#");
-            gsl.Add('k', "automation");
-            gsl.Add('c', "");
-            gsl.Add('z', "");
-            gsl.Add('b', "selenium");
-            Console.WriteLine("The no of total elements in my Sorted List is " + gsl.Count);
-            Console.WriteLine(gsl);
-            foreach (KeyValuePair<char, string> i in gsl)
+            Stack s = new Stack();
+            s.Push("I am");
+            s.Push(123);
+            s.Push(4.23);
+            s.Push('c');
+            s.Pop();
+            s.Push(12345678901234);
+
+            foreach (var i in s)
             {
-                Console.WriteLine("The Current Key in Sorted Lsit is " + i.Key + " The Current value in Sorted List is " + i.Value);
+                Console.WriteLine(i);
             }
         }
         public static void genericStack()
@@ -174,7 +178,6 @@ namespace OopsConcepts
                 l--;
             }
             Console.WriteLine("The total length of chars are " + total);
-
         }
         public static void exceptionHandling()
         {
