@@ -5,7 +5,7 @@ using System.Text;
 namespace OopsConcepts
 {
     class Class1 : Calculator
-    {
+    { 
         void run1()
         {
             Console.WriteLine("The multiplied value is " + this.multiplication(a, b));
@@ -36,9 +36,25 @@ namespace OopsConcepts
             m2.run1();
             m2.anotherRun();
         }
-        static void Main()
+        /*static void Main()
         {
             Class1.methodToRun();
-        }
+        }*/
+    }
+    class createdForList : conceptsOfCollections
+    {
+       /* static void Main()
+        {
+            createdForList c = new createdForList();
+            //c.hash();
+            //c.sortedList();
+            //c.stack();
+            //genericList();
+            //genericHashTable();
+            //genericSortedList();
+            //genericStack();
+            exceptionHandling();
+
+        }*/
     }
 }
