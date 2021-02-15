@@ -164,6 +164,50 @@ namespace OopsConcepts
                 Console.WriteLine(i);
             }
         }
+        public static void setExample()
+        {
+            HashSet<string> s = new HashSet<string>();
+            s.Add("Hello");
+            s.Add("Hi");
+            s.Add("There");
+            s.Add("Whatsup");
+            s.Add("Hello");
+            s.Add("Hi");
+            foreach(string x in s)
+            {
+                Console.WriteLine(x);
+            }
+        }
+        public static void SetWithVarDataType()
+        {
+            var s = new HashSet<string>();
+            s.Add("Hello");
+            s.Add("Hi");
+            s.Add("There");
+            s.Add("Whatsup");
+            s.Add("Hello");
+            s.Add("Hi");
+            foreach (string x in s)
+            {
+                Console.WriteLine(x);
+            }
+        }
+        public static void SetWithArray()
+        {
+            string[] arr1 = { "Table", "Chair", "Pen", "Clip", "Table" };
+            string[] arr2 = { "Hello", "Hi", "There", "Whatsup", "Hello", "Hi", "There" };
+            HashSet<string> s= new HashSet<string>(arr1);
+            var a = new HashSet<string>(arr2);
+            foreach (string x in s)
+            {
+                Console.WriteLine(x);
+            }
+            foreach (string x in a)
+            {
+                Console.WriteLine(x);
+            }
+        }
+
         static void seperateCharsInAString()
         {
             int i = 0, l, total = 0;
@@ -315,6 +359,7 @@ namespace OopsConcepts
             }
             return result;
         }
+ 
         /*static void Main()
         {
             Solution S = new Solution();

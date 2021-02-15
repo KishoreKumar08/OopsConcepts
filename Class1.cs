@@ -39,7 +39,7 @@ namespace OopsConcepts
     }
     class createdForList : conceptsOfCollections
     {
-        static void Main()
+        static void Main() 
         {
             createdForList c = new createdForList();
             //c.hash();
@@ -50,7 +50,11 @@ namespace OopsConcepts
             //genericSortedList();
             //genericStack();
             //exceptionHandling();
-            Class1.methodToRun();
+            //Class1.methodToRun();
+            //InterviewPrograms.duplicateElementsInArrayOrList();
+            //setExample();
+            //SetWithVarDataType();
+            SetWithArray();
         }
     }
 }
