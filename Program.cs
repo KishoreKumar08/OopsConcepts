@@ -207,23 +207,7 @@ namespace OopsConcepts
             {
                 Console.WriteLine(x);
             }
-        }
-
-        static void seperateCharsInAString()
-        {
-            int i = 0, l, total = 0;
-            String a = "IsaacSamPaul08!@#$%&*";
-            l = a.Length - 1;
-            while (i < l)
-            {
-                if (a[l] >= 'a' && a[l] <= 'z' || a[l] >= 'A' && a[l] <= 'Z')
-                {
-                    total = total + 1;
-                }
-                l--;
-            }
-            Console.WriteLine("The total length of chars are " + total);
-        }
+        }        
         public static void exceptionHandling()
         {
             try

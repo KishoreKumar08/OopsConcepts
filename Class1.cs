@@ -57,12 +57,17 @@ namespace OopsConcepts
             //SetWithVarDataType();
             //SetWithArray();
             //i.ReverseString("Kishore");
-            Console.WriteLine($"The reversed string is {i.ReverseString("Kishore")}");
-            Console.WriteLine($"The string without space is {i.SplitAStringBySpace("Hey there.. how are you!")}");
+            Console.WriteLine($"The reversed string is {i.ReverseAString("Kishore")}");
+            Console.WriteLine($"The string without space is {i.UniteAStringByRemovingSpace("Hey there.. how are you!")}");
             Console.WriteLine($"Current Date and Time is {i.GetDateTime()}");
             Console.WriteLine($"Current Date is {i.GetDate()}");
             Console.WriteLine($"Current Time is {i.GetTime()}");
             Console.WriteLine($"Current Date with Proposed DD and MM is {i.AddCurrentYearwithDD_MM("08","04")}");
+            Console.WriteLine($"Current Date with Proposed yyyy is {i.AddCurrentDateandTimewithYYYY("1995")}");
+            Console.WriteLine($"Current Date with Proposed dd mm yyyy is {i.DateFormatForGivenDDMMYYYY("08","04","1995")}");
+            Console.WriteLine($"Splitted String with Space is {i.SplitAStringBySpace(3,"HeyYouYesYouNotHimDefinitelyNot")}");
+            Console.WriteLine($"Splitted String with Space is {i.SplitAStringBySpace(3, "CSKRCBKKR")}");
+
         }
     }
 }
