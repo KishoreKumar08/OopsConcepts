@@ -42,6 +42,7 @@ namespace OopsConcepts
         static void Main() 
         {
             createdForList c = new createdForList();
+            CSharpTrickyReusablePrograms i = new CSharpTrickyReusablePrograms();
             //c.hash();
             //c.sortedList();
             //c.stack();
@@ -51,10 +52,17 @@ namespace OopsConcepts
             //genericStack();
             //exceptionHandling();
             //Class1.methodToRun();
-            //InterviewPrograms.duplicateElementsInArrayOrList();
+            //CSharpTrickyReusablePrograms.duplicateElementsInArrayOrList();
             //setExample();
             //SetWithVarDataType();
-            SetWithArray();
+            //SetWithArray();
+            //i.ReverseString("Kishore");
+            Console.WriteLine($"The reversed string is {i.ReverseString("Kishore")}");
+            Console.WriteLine($"The string without space is {i.SplitAStringBySpace("Hey there.. how are you!")}");
+            Console.WriteLine($"Current Date and Time is {i.GetDateTime()}");
+            Console.WriteLine($"Current Date is {i.GetDate()}");
+            Console.WriteLine($"Current Time is {i.GetTime()}");
+            Console.WriteLine($"Current Date with Proposed DD and MM is {i.AddCurrentYearwithDD_MM("08","04")}");
         }
     }
 }
